@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IoT & Health‑IoT Lab | MANIT Bhopal</title>
+  <meta name="description" content="Official page for the IoT & Health‑IoT Laboratory at MANIT Bhopal, coordinated by Dr. Vijay Bhaskar Semwal. Equipment, publications, patents, products, and faculty." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Icons (Lucide) -->
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+    /* Print styling */
+    @media print {
+      .no-print { display:none !important; }
+      a::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-3">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/61/Maulana_Azad_National_Institute_of_Technology_Logo.png" alt="MANIT Logo" class="w-10 h-10" />
+          <div>
+            <h1 class="text-lg font-semibold">IoT & Health‑IoT Lab</h1>
+            <p class="text-xs text-gray-500">Department of Computer Science & Engineering · MANIT Bhopal</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm no-print">
+          <a href="#about" class="hover:text-blue-700">About</a>
+          <a href="#coordinator" class="hover:text-blue-700">Coordinator</a>
+          <a href="#faculty" class="hover:text-blue-700">Faculty</a>
+          <a href="#equipment" class="hover:text-blue-700">Equipment</a>
+          <a href="#publications" class="hover:text-blue-700">Publications</a>
+          <a href="#patents" class="hover:text-blue-700">Patents</a>
+          <a href="#products" class="hover:text-blue-700">Products</a>
+          <a href="#contact" class="hover:text-blue-700">Contact</a>
+        </nav>
+        <div class="md:hidden no-print">
+          <button id="menuBtn" class="p-2 rounded-xl border border-gray-200 hover:bg-gray-100" aria-label="Toggle menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden pb-4 no-print">
+        <div class="grid grid-cols-2 gap-2 text-sm">
+          <a href="#about" class="px-3 py-2 rounded-lg bg-gray-100">About</a>
+          <a href="#coordinator" class="px-3 py-2 rounded-lg bg-gray-100">Coordinator</a>
+          <a href="#faculty" class="px-3 py-2 rounded-lg bg-gray-100">Faculty</a>
+          <a href="#equipment" class="px-3 py-2 rounded-lg bg-gray-100">Equipment</a>
+          <a href="#publications" class="px-3 py-2 rounded-lg bg-gray-100">Publications</a>
+          <a href="#patents" class="px-3 py-2 rounded-lg bg-gray-100">Patents</a>
+          <a href="#products" class="px-3 py-2 rounded-lg bg-gray-100">Products</a>
+          <a href="#contact" class="px-3 py-2 rounded-lg bg-gray-100">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-50 to-indigo-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Internet of Things & Health‑IoT Laboratory</h2>
+          <p class="mt-4 text-gray-700 leading-relaxed">A research facility focusing on IoT systems, wearable & flexible sensors, edge AI, healthcare analytics, embedded systems, and cyber‑physical systems. We build end‑to‑end prototypes—from sensing and data acquisition to ML inference and deployment.</p>
+          <div class="mt-6 flex flex-wrap gap-3 no-print">
+            <a href="#equipment" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white shadow hover:bg-blue-700"><i data-lucide="cpu"></i><span>Explore Equipment</span></a>
+            <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-100"><i data-lucide="printer"></i><span>Print / Save PDF</span></button>
+          </div>
+        </div>
+        <div>
+          <img class="w-full rounded-2xl shadow" src="https://images.unsplash.com/photo-1550602301-5ecf9fa0c6f9?q=80&w=1400&auto=format&fit=crop" alt="IoT Lab illustrative" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <!-- About -->
+    <section id="about" class="scroll-mt-24">
+      <h3 class="text-2xl font-bold">About the Lab</h3>
+      <p class="mt-3 text-gray-700">The IoT & Health‑IoT Lab at MANIT Bhopal advances research and teaching in embedded sensing, signal processing, machine learning for sensor data, healthcare informatics, robotics, and human‑activity recognition. The lab supports undergraduate, postgraduate, and Ph.D. research, with strong industry and clinical collaborations.</p>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-4 bg-white rounded-2xl border shadow-sm">
+          <div class="text-sm text-gray-500">Founded</div>
+          <div class="text-xl font-semibold">YYYY</div>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border shadow-sm">
+          <div class="text-sm text-gray-500">Coordinator</div>
+          <div class="text-xl font-semibold">Dr. Vijay Bhaskar Semwal</div>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border shadow-sm">
+          <div class="text-sm text-gray-500">Focus Areas</div>
+          <div class="text-sm">IoT · Wearables · Edge AI · HAR · Biomedical Signal Processing</div>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border shadow-sm">
+          <div class="text-sm text-gray-500">Location</div>
+          <div class="text-sm">CSE Department, MANIT Bhopal, MP, India</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coordinator -->
+    <section id="coordinator" class="mt-14 scroll-mt-24">
+      <h3 class="text-2xl font-bold">Faculty Coordinator</h3>
+      <div class="mt-4 p-6 bg-white rounded-2xl border shadow-sm grid md:grid-cols-[140px_1fr] gap-6">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop" alt="Coordinator" class="w-36 h-36 object-cover rounded-2xl" />
+        <div>
+          <h4 class="text-xl font-semibold">Dr. Vijay Bhaskar Semwal</h4>
+          <p class="text-sm text-gray-600">Assistant Professor, Department of CSE, MANIT Bhopal</p>
+          <div class="mt-3 text-sm text-gray-700 leading-relaxed">
+            Research interests: IoT, wearable/IMU sensors, human‑activity recognition, gait analysis, edge computing, and healthcare AI.
+          </div>
+          <div class="mt-4 flex flex-wrap gap-3 text-sm">
+            <a href="#contact" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border hover:bg-gray-50"><i data-lucide="mail"></i><span>Email</span></a>
+            <a href="#" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border hover:bg-gray-50"><i data-lucide="globe"></i><span>Personal Page</span></a>
+            <a href="#" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border hover:bg-gray-50"><i data-lucide="file-text"></i><span>CV</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty List -->
+    <section id="faculty" class="mt-14 scroll-mt-24">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold">Faculty Members</h3>
+        <div class="text-sm text-gray-500">(Add/Edit as needed)</div>
+      </div>
+      <div class="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Sample card -->
+        <article class="p-5 bg-white rounded-2xl border shadow-sm">
+          <h4 class="font-semibold">Dr. Vijay Bhaskar Semwal</h4>
+          <p class="text-sm text-gray-600">Assistant Professor · Coordinator</p>
+          <p class="mt-2 text-sm">IoT, Wearables, HAR, Edge AI</p>
+        </article>
+        <article class="p-5 bg-white rounded-2xl border shadow-sm">
+          <h4 class="font-semibold">Dr. [Name]</h4>
+          <p class="text-sm text-gray-600">Professor/Associate Professor</p>
+          <p class="mt-2 text-sm">[Areas: Sensor Fusion, Embedded Systems]</p>
+        </article>
+        <article class="p-5 bg-white rounded-2xl border shadow-sm">
+          <h4 class="font-semibold">Dr. [Name]</h4>
+          <p class="text-sm text-gray-600">Assistant Professor</p>
+          <p class="mt-2 text-sm">[Areas: Biomedical Signal Processing, ML]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Equipment -->
+    <section id="equipment" class="mt-14 scroll-mt-24">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold">Lab Equipment</h3>
+        <div class="text-sm text-gray-500">(Representative list — extend as required)</div>
+      </div>
+      <div class="mt-4 overflow-x-auto bg-white rounded-2xl border shadow-sm">
+        <table class="min-w-full text-sm">
+          <thead class="bg-gray-100 text-left">
+            <tr>
+              <th class="px-4 py-3">Category</th>
+              <th class="px-4 py-3">Item / Model</th>
+              <th class="px-4 py-3">Specs / Notes</th>
+              <th class="px-4 py-3">Qty</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr>
+              <td class="px-4 py-3">Microcontrollers</td>
+              <td class="px-4 py-3">Arduino Uno / Mega, ESP32</td>
+              <td class="px-4 py-3">Wi‑Fi/BLE, ADC/DAC, GPIO</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Edge AI Boards</td>
+              <td class="px-4 py-3">NVIDIA Jetson Nano/Xavier, Raspberry Pi 4</td>
+              <td class="px-4 py-3">CUDA cores, 4–8GB RAM</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Wearable Sensors</td>
+              <td class="px-4 py-3">IMU (MPU‑9250/ICM‑20948), ECG/PPG, EMG</td>
+              <td class="px-4 py-3">9‑axis, biomedical front‑ends</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Networking</td>
+              <td class="px-4 py-3">LoRa, BLE 5.0, Wi‑Fi, ZigBee modules</td>
+              <td class="px-4 py-3">Gateways, antennas</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Prototyping</td>
+              <td class="px-4 py-3">3D Printer, Soldering Stations, Oscilloscope</td>
+              <td class="px-4 py-3">Up to 200MHz scope</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Software</td>
+              <td class="px-4 py-3">MATLAB, Python, TensorFlow/PyTorch</td>
+              <td class="px-4 py-3">Academic licenses</td>
+              <td class="px-4 py-3">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="mt-14 scroll-mt-24">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
+        <div>
+          <h3 class="text-2xl font-bold">Publications</h3>
+          <p class="text-sm text-gray-500">(Recent/selected. Replace placeholders with actual entries.)</p>
+        </div>
+        <div class="no-print flex items-center gap-2">
+          <input id="pubSearch" type="text" placeholder="Search publications…" class="w-64 px-3 py-2 rounded-xl border" />
+          <button id="bibtexBtn" class="px-3 py-2 rounded-xl border hover:bg-gray-50">Export BibTeX</button>
+        </div>
+      </div>
+
+      <ol id="pubList" class="mt-4 space-y-4 list-decimal list-inside">
+        <li class="bg-white p-4 rounded-2xl border shadow-sm" data-bibtex="@article{semwal2025har, title={Human Activity Recognition using GRU and Transformer Models}, author={Semwal, Vijay Bhaskar and Doe, A.}, journal={Journal of IoT Systems}, year={2025}}">
+          <div class="font-medium">Human Activity Recognition using GRU and Transformer Models</div>
+          <div class="text-sm text-gray-600">V. B. Semwal, A. Doe — <span class="italic">Journal of IoT Systems</span>, 2025</div>
+          <div class="mt-1 text-sm">Keywords: HAR, Wearable IMU, Deep Learning</div>
+        </li>
+        <li class="bg-white p-4 rounded-2xl border shadow-sm" data-bibtex="@inproceedings{semwal2024gait, title={Gait Trajectory Estimation with Minimal IMUs}, author={Semwal, Vijay Bhaskar and Roe, B.}, booktitle={Proc. IEEE SensorApps}, year={2024}}">
+          <div class="font-medium">Gait Trajectory Estimation with Minimal IMUs</div>
+          <div class="text-sm text-gray-600">V. B. Semwal, B. Roe — <span class="italic">IEEE SensorApps</span>, 2024</div>
+          <div class="mt-1 text-sm">Keywords: Gait, Sensor Fusion, Edge AI</div>
+        </li>
+        <li class="bg-white p-4 rounded-2xl border shadow-sm" data-bibtex="@article{healthiot2023, title={Edge Computing for Health‑IoT}, author={Semwal, Vijay Bhaskar and Coauthors}, journal={IEEE IoT Journal}, year={2023}}">
+          <div class="font-medium">Edge Computing for Health‑IoT</div>
+          <div class="text-sm text-gray-600">V. B. Semwal, et al. — <span class="italic">IEEE Internet of Things Journal</span>, 2023</div>
+          <div class="mt-1 text-sm">Keywords: Edge Computing, Healthcare Analytics</div>
+        </li>
+      </ol>
+      <textarea id="bibtexOut" class="mt-4 w-full h-32 p-3 rounded-xl border hidden" readonly></textarea>
+    </section>
+
+    <!-- Patents -->
+    <section id="patents" class="mt-14 scroll-mt-24">
+      <h3 class="text-2xl font-bold">Patents</h3>
+      <p class="text-sm text-gray-500">(Replace with actual patent numbers/titles.)</p>
+      <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <article class="p-5 bg-white rounded-2xl border shadow-sm">
+          <div class="font-semibold">Wearable System for Real‑Time Gait Monitoring</div>
+          <div class="text-sm text-gray-600">Indian Patent Application No.: XXXX/DEL/20YY — Filed: DD‑MM‑YYYY</div>
+          <p class="mt-2 text-sm">A lightweight, low‑power IMU‑based system for continuous gait analysis and fall risk assessment.</p>
+        </article>
+        <article class="p-5 bg-white rounded-2xl border shadow-sm">
+          <div class="font-semibold">IoT‑Enabled Remote Health Diagnostics Platform</div>
+          <div class="text-sm text-gray-600">Indian Patent Application No.: YYYY/MUM/20ZZ — Filed: DD‑MM‑YYYY</div>
+          <p class="mt-2 text-sm">Secure data acquisition and edge inference for telehealth applications.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Product Designs / Prototypes -->
+    <section id="products" class="mt-14 scroll-mt-24">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold">Product Designs & Prototypes</h3>
+        <div class="text-sm text-gray-500">(Add images/links as available)</div>
+      </div>
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <article class="p-5 bg-white rounded-2xl border shadow-sm flex flex-col">
+          <img class="w-full h-40 object-cover rounded-xl" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop" alt="Prototype" />
+          <h4 class="mt-3 font-semibold">HAR Wristband (v1)</h4>
+          <p class="text-sm text-gray-700">BLE‑enabled IMU wristband with on‑device activity inference.</p>
+          <div class="mt-auto pt-3 text-sm flex gap-3">
+            <a href="#" class="underline">Datasheet</a>
+            <a href="#" class="underline">GitHub</a>
+          </div>
+        </article>
+        <article class="p-5 bg-white rounded-2xl border shadow-sm flex flex-col">
+          <img class="w-full h-40 object-cover rounded-xl" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Prototype" />
+          <h4 class="mt-3 font-semibold">Edge Health Gateway</h4>
+          <p class="text-sm text-gray-700">Raspberry Pi/Jetson gateway for secure multi‑sensor data fusion.</p>
+          <div class="mt-auto pt-3 text-sm flex gap-3">
+            <a href="#" class="underline">Docs</a>
+            <a href="#" class="underline">Demo</a>
+          </div>
+        </article>
+        <article class="p-5 bg-white rounded-2xl border shadow-sm flex flex-col">
+          <img class="w-full h-40 object-cover rounded-xl" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop" alt="Prototype" />
+          <h4 class="mt-3 font-semibold">Smart Insole</h4>
+          <p class="text-sm text-gray-700">Pressure + IMU insole for gait and balance assessment.</p>
+          <div class="mt-auto pt-3 text-sm flex gap-3">
+            <a href="#" class="underline">Paper</a>
+            <a href="#" class="underline">Patent</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-14 scroll-mt-24">
+      <h3 class="text-2xl font-bold">Contact</h3>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h4 class="font-semibold">Lab Address</h4>
+          <p class="mt-2 text-sm text-gray-700">IoT & Health‑IoT Laboratory<br/>Department of CSE, MANIT Bhopal<br/>Bhopal, Madhya Pradesh 462003, India</p>
+          <div class="mt-4 text-sm">
+            <div class="flex items-center gap-2"><i data-lucide="mail"></i><span><a href="mailto:vbsemwal@manit.ac.in" class="underline">vbsemwal@manit.ac.in</a></span></div>
+            <div class="flex items-center gap-2 mt-2"><i data-lucide="phone"></i><span>+91‑XXXXXXXXXX</span></div>
+          </div>
+        </div>
+        <form class="p-6 bg-white rounded-2xl border shadow-sm no-print" onsubmit="event.preventDefault(); alert('Thank you! Your message has been recorded.'); this.reset();">
+          <h4 class="font-semibold">Quick Message</h4>
+          <div class="mt-3 grid gap-3">
+            <input type="text" placeholder="Your Name" class="px-3 py-2 rounded-xl border" required />
+            <input type="email" placeholder="Email" class="px-3 py-2 rounded-xl border" required />
+            <textarea placeholder="Message" class="px-3 py-2 rounded-xl border h-24" required></textarea>
+            <button class="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>© <span id="year"></span> IoT & Health‑IoT Lab, MANIT Bhopal. All rights reserved.</div>
+        <div class="no-print">Built with ❤️ by the Lab · <a href="#" class="underline">GitHub</a> · <a href="#" class="underline">LinkedIn</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Init icons
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) lucide.createIcons();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
+
+    // Publications search
+    const pubSearch = document.getElementById('pubSearch');
+    const pubList = document.getElementById('pubList');
+    if (pubSearch && pubList) {
+      pubSearch.addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase();
+        pubList.querySelectorAll('li').forEach(li => {
+          const t = li.textContent.toLowerCase();
+          li.style.display = t.includes(q) ? '' : 'none';
+        });
+      });
+    }
+
+    // Export BibTeX from publication items
+    const bibtexBtn = document.getElementById('bibtexBtn');
+    const bibtexOut = document.getElementById('bibtexOut');
+    if (bibtexBtn && bibtexOut) {
+      bibtexBtn.addEventListener('click', () => {
+        const entries = Array.from(document.querySelectorAll('#pubList [data-bibtex]')).map(x => x.dataset.bibtex.trim());
+        bibtexOut.value = entries.join('\n\n');
+        bibtexOut.classList.remove('hidden');
+        bibtexOut.scrollIntoView({behavior:'smooth'});
+      });
+    }
+  </script>
+</body>
+</html>
